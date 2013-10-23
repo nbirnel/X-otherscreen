@@ -1,0 +1,9 @@
+#!/bin/sh
+
+eval $(xdotool getmouselocation --shell)
+if [ $X -gt 1280 ]; then
+    xdotool mousemove 640 $Y
+else
+    xdotool mousemove 1940 $Y
+fi
+
